@@ -129,7 +129,7 @@ def winner(board)
    if won?(board)
     puts "Congratulations #{winner(board)}!"
    elsif draw?(board)
-     over?(board)
      puts "Cat's Game!"
    end
+   over?(board)
 end
