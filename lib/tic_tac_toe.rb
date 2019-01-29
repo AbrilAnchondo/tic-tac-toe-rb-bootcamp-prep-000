@@ -124,7 +124,7 @@ def winner(board)
  
  
  def play(board)
-   current_player(board)
+  
    until over?(board)
     turn(board)
    end
@@ -133,4 +133,5 @@ def winner(board)
    elsif draw?(board)
     puts "Cat's Game!"
    end
+   over?(board)
 end
