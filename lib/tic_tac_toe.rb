@@ -123,9 +123,8 @@ def winner(board)
  
  
  def play(board)
-   
-   until over?(board)
-   
+    until over?(board)
+    turn_count(board)
     turn(board)
    end
    if won?(board)
